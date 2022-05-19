@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main className="relative min-h-almost bg-sky-50 sm:flex sm:items-center sm:justify-center">
+      <main className="relative h-4/5 bg-stone-100">
         <Home />
       </main>
       <Footer />

@@ -3,7 +3,7 @@ import { NavLink } from "@remix-run/react";
 export default function Header() {
   const activeStyle = "bg-gray-500 font-bold text-gray-700";
   return (
-    <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between bg-white py-2 shadow-md">
+    <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between bg-gray-50 py-2 shadow-md">
       <div className="flex w-full flex-wrap items-center justify-between px-6">
         <div className="flex items-center">
           <button

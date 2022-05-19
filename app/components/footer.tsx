@@ -2,7 +2,7 @@ import Copyright from "./copyright";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-center text-gray-600 lg:text-left">
+    <footer className="bg-gray-50 text-center text-gray-600 lg:text-left">
       <div className="flex items-center justify-center border-b border-gray-300 p-6 lg:justify-between">
         <Copyright />
         <div className="flex justify-center">
@@ -15,7 +15,7 @@ export default function Footer() {
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              className="w-4"
+              className="w-6"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -35,7 +35,7 @@ export default function Footer() {
               focusable="false"
               data-prefix="fab"
               data-icon="linkedin-in"
-              className="w-3.5"
+              className="w-6"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -52,7 +52,7 @@ export default function Footer() {
               focusable="false"
               data-prefix="fab"
               data-icon="github"
-              className="w-4"
+              className="w-6"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
