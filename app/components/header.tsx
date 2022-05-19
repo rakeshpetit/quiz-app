@@ -1,3 +1,5 @@
+import { Link } from "remix";
+
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between bg-white py-2 shadow-md">
@@ -46,24 +48,26 @@ export default function Header() {
         >
           <ul className="navbar-nav mr-auto lg:flex lg:flex-row">
             <li className="nav-item">
-              <a
-                className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
-                href="#!"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                Home
-              </a>
+              <Link to="/">
+                <span
+                  className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  Home
+                </span>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
-                href="#!"
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
-                Uses
-              </a>
+              <Link to="/uses">
+                <span
+                  className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  Uses
+                </span>
+              </Link>
             </li>
           </ul>
         </div>
