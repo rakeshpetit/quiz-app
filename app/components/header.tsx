@@ -3,7 +3,7 @@ import { NavLink } from "@remix-run/react";
 export default function Header() {
   const activeStyle = "bg-gray-500 font-bold text-gray-700";
   return (
-    <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between bg-gray-50 py-2 shadow-md">
+    <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between border-b-2 bg-gray-50 py-2 shadow-md">
       <div className="flex w-full flex-wrap items-center justify-between px-6">
         <div className="flex items-center">
           <button
@@ -77,6 +77,22 @@ export default function Header() {
                   data-mdb-ripple-color="light"
                 >
                   Uses
+                </span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/posts"
+                className={({ isActive }) =>
+                  isActive ? activeStyle : undefined
+                }
+              >
+                <span
+                  className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  Posts
                 </span>
               </NavLink>
             </li>
