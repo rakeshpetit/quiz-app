@@ -1,6 +1,7 @@
-import { Link } from "remix";
+import { NavLink } from "@remix-run/react";
 
 export default function Header() {
+  const activeStyle = "bg-gray-500 font-bold text-gray-700";
   return (
     <nav className="navbar navbar-expand-lg relative flex w-full items-center justify-between bg-white py-2 shadow-md">
       <div className="flex w-full flex-wrap items-center justify-between px-6">
@@ -48,7 +49,12 @@ export default function Header() {
         >
           <ul className="navbar-nav mr-auto lg:flex lg:flex-row">
             <li className="nav-item">
-              <Link to="/">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeStyle : undefined
+                }
+              >
                 <span
                   className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
                   data-mdb-ripple="true"
@@ -56,10 +62,15 @@ export default function Header() {
                 >
                   Home
                 </span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/uses">
+              <NavLink
+                to="/uses"
+                className={({ isActive }) =>
+                  isActive ? activeStyle : undefined
+                }
+              >
                 <span
                   className="nav-link block py-2 pr-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 lg:px-2"
                   data-mdb-ripple="true"
@@ -67,7 +78,7 @@ export default function Header() {
                 >
                   Uses
                 </span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
