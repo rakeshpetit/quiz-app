@@ -109,6 +109,8 @@ export default function Join() {
                 ref={emailRef}
                 id="email"
                 required
+                readOnly
+                defaultValue={"rak@example.com"}
                 autoFocus={true}
                 name="email"
                 type="email"
