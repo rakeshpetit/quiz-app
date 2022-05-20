@@ -28,8 +28,10 @@ export default function PostSlug() {
       <Header />
       <main className="relative min-h-almost sm:flex sm:items-center sm:justify-center">
         <section>
-          <h1 className="mt-4 text-center text-3xl">{post.title}</h1>
-          <article className="prose prose-blue prose-headings:font-light prose-h1:mt-8 prose-li:font-mono">
+          <h1 className="mt-4 text-center text-3xl text-cyan-700 lg:text-5xl">
+            {post.title}
+          </h1>
+          <article className="prose prose-pink prose-headings:font-bold lg:text-2xl lg:leading-relaxed">
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </article>
         </section>
