@@ -27,9 +27,15 @@ export default function Index() {
               <li key={post.slug} className="mb-4">
                 <Link
                   to={post.slug}
-                  className="block w-full cursor-pointer py-1 text-3xl font-extrabold text-teal-600"
+                  className="block w-full cursor-pointer py-1 text-3xl"
                 >
-                  {post.title}
+                  <div className="flex justify-center">
+                    <div className="w-2/3 rounded-lg bg-white p-6 px-12 shadow-lg">
+                      <h2 className="mb-2 text-3xl font-extrabold leading-tight text-teal-600">
+                        {post.title}
+                      </h2>
+                    </div>
+                  </div>
                 </Link>
               </li>
             ))}
