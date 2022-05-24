@@ -16,4 +16,10 @@ export async function createPost(
   return prisma.post.create({ data: post });
 }
 
+export async function deletePost({ slug }: Pick<Post, "slug">) {
+  return prisma.post.deleteMany({
+    where: { slug },
+  });
+}
+
 export type { Post };
