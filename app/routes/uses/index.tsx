@@ -28,9 +28,11 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main className="relative min-h-almost bg-sky-50 sm:flex sm:items-center sm:justify-center">
-        <Uses html={html} />
-      </main>
+      <div className="items-center justify-center bg-sky-50">
+        <main className="relative min-h-almost py-8">
+          <Uses html={html} />
+        </main>
+      </div>
       <Footer />
     </>
   );
