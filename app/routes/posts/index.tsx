@@ -20,8 +20,8 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main className="relative h-4/5 bg-stone-100">
-        <div className="flex items-center justify-center pt-8">
+      <div className="items-center justify-center bg-stone-100">
+        <main className="min-h-4/5 relative py-8">
           <ul>
             {posts.map((post) => (
               <li key={post.slug} className="mb-4">
@@ -31,7 +31,7 @@ export default function Index() {
                 >
                   <div className="flex justify-center">
                     <div className="w-2/3 rounded-lg bg-white p-6 px-12 shadow-lg">
-                      <h2 className="mb-2 text-3xl font-extrabold leading-tight text-teal-600">
+                      <h2 className="mb-2 text-xl font-extrabold leading-tight text-teal-600 lg:text-3xl">
                         {post.title}
                       </h2>
                     </div>
@@ -40,8 +40,8 @@ export default function Index() {
               </li>
             ))}
           </ul>
-        </div>
-      </main>
+        </main>
+      </div>
       <Footer />
     </>
   );
